@@ -1,0 +1,21 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 pt-5">
+            <img class="card-img-top" width="256px" src="{{ post.photo.url }}"  alt="Card image cap">
+            <h2 class="pt-5">{{post.product}}</h2>
+            Description:<br/>
+            <p>{{post.description}}</p>
+            
+            <h6 class="pt-5" style="color: forestgreen;">{{post.price}} ₱</h6>
+
+            <a href="/">Back to Product List</a><br/><br/>
+
+        </div>
+    </div> 
+</div>
+
+{% endblock %}

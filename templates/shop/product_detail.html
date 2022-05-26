@@ -1,0 +1,26 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-5 pt-5">
+            <img class="card-img-top" src="{{ post.photo.url }}"  alt="Card image cap">
+        </div>
+        <div class="col-6">  
+            <h2 class="pt-5" style="color: rgb(55, 138, 233) ;">{{post.product}}</h2>
+            <p style="font-weight: 500;"> Overview:<br/></p>
+            <p>{{post.overview}}</p>
+
+            <p style="font-weight: 500;"> Material:<br/></p>
+            <p>{{post.material}}</p>
+            
+            <h6 class="pt-5" style="color: forestgreen;"> $ {{post.price}}</h6>
+
+            <a href="/">Back to Product List</a><br/><br/>
+        </div> 
+        
+    </div> 
+</div>
+
+{% endblock %}
