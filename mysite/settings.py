@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-uxgm_)zx8ov_&ae6yuj^eu+$4!vor7g8x9^$hh_+^572giu0$$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['elcubo-live.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
